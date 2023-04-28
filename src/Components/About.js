@@ -46,7 +46,7 @@ function About() {
               style={{ animation: fade ? "slideInDown" : "tada", animationDuration: fade ? '2.1s' : "2s" }}
               onClick={triggerFade}
               className='me'>about Me</h1>
-            <p>Hey I'm Sanjay from a Full Stock Develover. I lived in Chidambaram. i'm Fresher So Looking for the Jobs</p>
+            <p>Hey, I'm Sanjay, a full-stack developer. I lived in Chidambaram. I'm a newcomer, so I'm looking for work.</p>
 
             <div className='tab-titles'>
               <p className='tab-link active' onClick={() => opentab('Skill')}>Skill</p>
@@ -78,7 +78,7 @@ function About() {
             </div>
             <div id='Experience' className='tab-content'>
               <ul>
-                <li><span>DELPHI TVS COMPANY</span> Complete Short Term Trinee</li>
+                <li><span>DELPHI TVS COMPANY</span> Complete short term trainee</li>
                 <li>Personel Project</li>
                 <li>Cetrificate Course</li>
                 <li>Leadership Position</li>
