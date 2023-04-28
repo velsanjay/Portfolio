@@ -1,38 +1,394 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background: #080808;
+  color: #fff;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/KAN_5551-removebg-preview.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  padding: 10px 5%;
+  background: transparent;
+  backdrop-filter: blur(10%);
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 ;
+  /* width: 100%; */
+  padding: 0%;
+  height: 60px 10px;
+  position: fixed;
+}
+.logo{
+  width: 240px;
+}
+nav ul {
+  height: max-content;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 90px ;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: 0.5s ease;
+  position: relative;
+}
+nav ul li a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background: brown;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul:hover li a{
+  color: #30edf4;
+}
+nav ul:hover li a:not(:hover){
+  color: white;
+  opacity: 0.3;
+  filter: blur(1px);
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  margin-top: 25%;
+  font-size: 30px;
+  margin-left: 10%;
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+  animation: rubberBand;
+  animation-duration: 2s;
+}
+.header-text p{
+  animation: flipInY;
+  animation-duration: 2s;
+}
+.header-text h1 span{
+  color: red;
+}
+/* about */
+
+#about{
+  padding: 88px 0;
+  color: #ababab;
+  /* height: 100vh; */
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+
+}
+.about-col-1 img{
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.me{
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-link{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.tab-link::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-link.active::after{
+  width: 50%;
+}
+.tab-content ul li {
+  list-style: none;
+  margin: 10px 0;
+  transition: left 0.5s;
+}
+.tab-content ul li span{
+  color: #b54769;
+  font-size: 17px;
+  font-weight: 600;
+}
+.tab-titles:hover {
+  color: #30edf4;
+}
+.tab-titles:hover .tab-link:not(:hover){
+  color: white;
+  opacity: 0.3;
+  filter: blur(1px);
+}
+.tab-content{
+  display: none;
+}
+.tab-content.active-tab{
+  display: block;
+}
+/* Service */
+#service{
+  padding: 130px 20px;
+}
+#service h1{
+  animation: bounceInLeft;
+  animation-duration: 2s;
+}
+.service-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.service-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 10px;
+  height: max-content;
+  transition: background 0.5s, transform 0.5s ;
+}
+.service-list div img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.service-list div h2{
+  padding-bottom: 20px;
+}
+.service-list div p{
+  font-size: 15px;
+}
+.service-list div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.service-list div:hover{
+  background: #f94848;
+  transform: translateY(-10px);
+}
+#form{
+  margin: 200px 300px 0 300px;
+  border-radius: 15px;
+  background-color: skyblue;
+  padding: 130px 20px;
+  color: #080808;
+  border: 1px solid  red;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:3rem;
+  padding: 17px;
+  
+}
+.button:is(:hover , :focus){
+  outline-offset: 3px;
+}
+.arrow{
+margin-bottom:20px;
+margin-right: 30px;
+display: flex;
+justify-content: flex-end;
+
+/* width: fit-content; */
+}
+.arrow a{
+  border: 1px solid white;
+}
+nav .icon{
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media ( max-width :600px){
+  #header{
+    background-image: url('image/myimg.jpg')
   }
-  to {
-    transform: rotate(360deg);
+  
+  .header-text{
+    margin-top: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+    font-size: 20px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  nav .icon{
+    display: inline-block;
+    font-size: 25px;
+  }
+  nav ul{
+    position: fixed;
+    background: #ff004f;
+    top: 0;
+    right: 0;
+    width: 200px;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav ul .icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  
+  .about-col-1 img{
+    width: 200px;
+    margin-left: 25%;
+  }
+  .about-col-2 p{
+    font-size: 20px;
+  }
+  .about-col-2 ul li{
+    font-weight: 300;
+    font-size: 17px;
+  }
+  #about{
+    padding-bottom: 10px;
+  }
+  #service{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .service-list{
+    display: inline-block;
+    gap: 20px;
+  }
+  .a{
+    margin: 22px;
+  }
+  .c{
+    margin: 22px;
+  }
+  .b{
+    margin: 22px;
+  }
+  #form{
+    display: inline-block;
+    margin: 0 10px 
+  }
+}
+
+@media ( max-width :998px) and (min-width:601px){
+  #header{
+    background-image: url('image/myimg\ -\ Copy.jpg  ')
+  } 
+  .header-text{
+    margin-top: 60%;
+    margin-left: 20px;
+    /* display: flex;
+    justify-content: flex-end; */
+    font-size: 25px;
+    color: rgb(rgb(247, 200, 200), green, blue);
+  }
+  .header-text h1{
+    font-size: 35px;
+  }
+  nav .icon{
+    display: inline-block;
+    font-size: 25px;
+  }
+  nav ul{
+    position: fixed;
+    background: #ff004f;
+    top: 0;
+    right: 0;
+    width: 200px;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px 0;
+  }
+  nav  .icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #form{
+    display: inline-block;
+    margin: 0 20% ;
   }
 }
