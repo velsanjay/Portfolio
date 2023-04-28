@@ -22,10 +22,9 @@ body{
   backdrop-filter: blur(10%);
 }
 nav{
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: auto auto;
   margin: 0 ;
   padding: 0%;
   height: 60px 10px;
