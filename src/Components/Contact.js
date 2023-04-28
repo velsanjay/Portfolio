@@ -45,6 +45,7 @@ function Contact() {
                     label="Name"
                     variant="outlined"
                     required
+                    style={{margin:"20px 0"}}
                 />
               
               <TextField
@@ -56,6 +57,7 @@ function Contact() {
                     label="Email"
                     variant="outlined"
                     required
+                    style={{margin:"20px 0" }}
                 />
                 
                 <TextField
@@ -67,6 +69,7 @@ function Contact() {
                     label="Messege"
                     variant="outlined"
                     required
+                    style={{margin:"20px 0"}}
                 />
 
 <Button  className='button' type="submit" value="Send" variant="contained" endIcon={<SendIcon />}>
