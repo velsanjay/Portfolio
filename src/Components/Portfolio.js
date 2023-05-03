@@ -35,11 +35,18 @@ useEffect(()=>{
           <p>This is student and teacher management for college. In this application, we use the mock API to create, read, update, and delete the books. It's also twoAPIs in one application. </p>
           <a target='_blank' href='https://prismatic-torrone-dccaae.netlify.app/'>Learn More</a>
         </div>
+        <div className='b'>
+          <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6451f85a03d1ba000882ec6b/screenshot_2023-05-03-06-00-35-0000.png'/>
+          <h2>Basic Email Sender</h2>
+          <p>This is the basic email sender app. Allow access to the Dashboard page if your user ID and password are the same. Otherwise, check if your email is valid. if a valid user sends the token ID to the address in your email. If your token ID is valid, allow me to reset your password and login to the dashboard page. </p>
+          <a href='https://celebrated-llama-e3b8f8.netlify.app/' target='_blank' >LearnMore</a>
+        </div>
+
         <div className='c'>
-          <img src={project}/>
-          <h2>Room Booking APP</h2>
-          <p>This is a room booking app clone for the backend. In this application, we use the Mongoose schema for validation. The room was only empty to book the room, and the room is full. Return the error. </p>
-          <a href='https://room-book.onrender.com/room' target='_blank' >LearnMore</a>
+          <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6451f85a03d1ba000882ec6b/screenshot_2023-05-03-06-00-35-0000.png'/>
+          <h2>Money Manager</h2>
+          <p>This is the basic Money Manager. Allow access to the Dashboard page if your user ID and password are the same. Otherwise, check if your email is valid, reset your password, and login to the dashboard page. On this dashboard page, you have income and expenditures. On the next page, you create new values.</p>
+          <a href='https://splendid-dasik-59ca20.netlify.app/' target='_blank' >LearnMore</a>
         </div>
       </div>
     </div>
