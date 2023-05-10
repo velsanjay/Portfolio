@@ -80,7 +80,7 @@ const   Type = () =>{
  
   ScrollReveal().reveal('.header-text, .about-col-2 p ,.about-col-2 .tab-titles , #form h1 ' , { origin:'top' })
   ScrollReveal().reveal('.about-col-1 ,  .service-list .b , .form ' , { origin:'bottom' })
-  ScrollReveal().reveal('.service-list .a ,.a' , { origin:'left' })
+  ScrollReveal().reveal('.service-list .a ,' , { origin:'left' })
   ScrollReveal().reveal('.service-list .c' , { origin:'right' })
 
  new Typed('.multi',{
