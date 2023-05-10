@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import { Button, Input, TextField } from '@mui/material'; 
+import { Button, Input, TextField } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 function Contact() {
     const form = useRef();
-    
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,14 +22,14 @@ function Contact() {
                 console.log(error.text);
                 toast.error('Email Not Valid')
             });
-            let a=document.querySelectorAll('input')
-           for(let i of a){
-            i.value='';
-           }
+        let a = document.querySelectorAll('input')
+        for (let i of a) {
+            i.value = '';
+        }
 
     }
 
-    
+
 
     return <>
         <div id='form'>
@@ -37,7 +37,7 @@ function Contact() {
             <form className='form' ref={form} onSubmit={sendEmail}>
 
                 <TextField
-                className='textfield'
+                    className='textfield'
                     type="text"
                     fullWidth
                     id="outlined-basic a"
@@ -45,44 +45,45 @@ function Contact() {
                     label="Name"
                     variant="outlined"
                     required
-                    style={{margin:"20px 0"}}
+                    style={{ margin: "20px 0" }}
                 />
-              
-              <TextField
-                className='textfield'
-                type="email"
+
+                <TextField
+                    className='textfield'
+                    type="email"
                     fullWidth
                     id="outlined-basic b"
                     name="user_email"
                     label="Email"
                     variant="outlined"
                     required
-                    style={{margin:"20px 0" }}
+                    style={{ margin: "20px 0" }}
                 />
-                
+
                 <TextField
-                className='textfield'
-                type="text"
+                    className='textfield'
+                    type="text"
                     fullWidth
                     id="outlined-basic c"
                     name="message"
                     label="Messege"
                     variant="outlined"
                     required
-                    style={{margin:"20px 0"}}
+                    style={{ margin: "20px 0" }}
                 />
 
-<Button  className='button' type="submit" value="Send" variant="contained" endIcon={<SendIcon />}>
-  Send
-</Button>
+                <Button className='button' type="submit" value="Send" variant="contained" endIcon={<SendIcon />}>
+                    Send
+                </Button>
 
             </form>
-        
-  </div>
-        
+
+
+        </div>
+
         <div className='arrow'>
-    <a href='#'><FontAwesomeIcon icon={faAngleUp} size="2xl" style={{color: "#fff",}} /></a>
-  </div>
+            <a href='#'><FontAwesomeIcon icon={faAngleUp} size="2xl" style={{ color: "#fff", }} /></a>
+        </div>
     </>
 }
 

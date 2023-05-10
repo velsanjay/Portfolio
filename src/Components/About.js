@@ -53,7 +53,7 @@ function About() {
               <p className='tab-link' onClick={() => opentab('Experience')}>Experience</p>
               <p className='tab-link' onClick={() => opentab('Education')}>Education</p>
             </div>
-            <div id='Skill' className='tab-content active-tab'>
+            <div id='Skill' className='tab-content active-tab a'>
               <ul>
                 <li><span>Front End Developer </span>
                   <ol>
@@ -76,7 +76,7 @@ function About() {
                 </li>
               </ul>
             </div>
-            <div id='Experience' className='tab-content'>
+            <div id='Experience' className='tab-content a'>
               <ul>
                 <li><span>DELPHI TVS COMPANY</span> Complete short term trainee</li>
                 <li>Personel Project</li>
@@ -84,7 +84,7 @@ function About() {
                 <li>Leadership Position</li>
               </ul>
             </div>
-            <div id='Education' className='tab-content'>
+            <div id='Education' className='tab-content a'>
               <ul>
                 <li><span>Nov-2022 To Apr-2023</span> Full Stack Developer at GUVI GEEKS Network</li>
                 <li><span>2021</span> B.E Mechanical Engineering From MREC Ariyalur</li>
