@@ -23,7 +23,7 @@ useEffect(()=>{
       >My Projects</h1>
       
       <div className='service-list'>
-        <a href='https://classy-cactus-9a294e.netlify.app/' target='_blank'>
+        <a href='https://classy-cactus-9a294e.netlify.app' target='_blank'>
         <div className='a'>
           <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/642bd57ec5ac65000873b0af/screenshot_2023-04-04-07-45-43-0000.png'/>
           <h2>API CRUD Application with Formic Validator</h2>
@@ -40,7 +40,7 @@ useEffect(()=>{
         </div>
         </a>
         <a href='https://celebrated-llama-e3b8f8.netlify.app/' target='_blank'>
-        <div className='b'>
+        <div className='c'>
           <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6451f85a03d1ba000882ec6b/screenshot_2023-05-03-06-00-35-0000.png'/>
           <h2>Basic Email Sender</h2>
           <p>This is the basic email sender app. Allow access to the Dashboard page if your user ID and password are the same. Otherwise, check if your email is valid. if a valid user sends the token ID to the address in your email. If your token ID is valid, allow me to reset your password and login to the dashboard page. </p>
@@ -48,7 +48,7 @@ useEffect(()=>{
         </div>
         </a>
         <a href='https://splendid-dasik-59ca20.netlify.app/' target='_blank'>
-        <div className='b'>
+        <div className='a'>
           <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6451f85a03d1ba000882ec6b/screenshot_2023-05-03-06-00-35-0000.png'/>
           <h2>Money Manager</h2>
           <p>This is the basic Money Manager. Allow access to the Dashboard page if your user ID and password are the same. Otherwise, check if your email is valid, reset your password, and login to the dashboard page. On this dashboard page, you have income and expenditures. On the next page, you create new values.</p>
@@ -57,7 +57,7 @@ useEffect(()=>{
         </a>
 
         <a href='https://dreamy-dango-30842b.netlify.app' target='_blank'>
-        <div className='c'>
+        <div className='b'>
           <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/64550b3b6741bd0008ce7f73/screenshot_2023-05-05-13-57-53-0000.png'/>
           <h2>URL Shortner</h2>
           <p>TThis is the URL Shortner app. It's used to convert any long url to a short url and how many times they are used. This is used in Mongoose schema validation.</p>
@@ -80,7 +80,7 @@ const   Type = () =>{
  
   ScrollReveal().reveal('.header-text, .about-col-2 p ,.about-col-2 .tab-titles , #form h1 ' , { origin:'top' })
   ScrollReveal().reveal('.about-col-1 ,  .service-list .b , .form ' , { origin:'bottom' })
-  ScrollReveal().reveal('.service-list .a ,' , { origin:'left' })
+  ScrollReveal().reveal('.service-list .a' , { origin:'left' })
   ScrollReveal().reveal('.service-list .c' , { origin:'right' })
 
  new Typed('.multi',{
