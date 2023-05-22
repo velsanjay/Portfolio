@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  position: sticky;
   scroll-behavior: smooth;
 }
 body{
@@ -119,6 +120,9 @@ nav ul li a:hover::after{
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+}
+.b{
+  position: unset;
 }
 .tab-titles{
   display: flex;
