@@ -62,7 +62,7 @@ useEffect(()=>{
           <img src='https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/646b1f70ab30920008094c87/screenshot_2023-05-22-07-53-52-0000.png'/>
           <h2>The Movie Database Clone</h2>
           <p>This is the The Movie Database(TMDB) Clone. It's Used see the movie detail.</p>
-          <a href='https://dreamy-dango-30842b.netlify.app' target='_blank' >LearnMore</a>
+          <a href='https://nimble-blancmange-5fff0c.netlify.app' target='_blank' >LearnMore</a>
         </div>
         
       </div>
